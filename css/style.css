@@ -12,7 +12,7 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  color: #fff;
+
   font-size: 1.6rem;
 }
 .wrapper {
@@ -47,6 +47,10 @@ a {
 .navbar__list--item {
   position: relative;
 }
+.navbar__list--item a {
+  color: #fff;
+}
+
 .navbar__list--item:hover .navbar__list--item-sub {
   display: block;
 }
@@ -69,15 +73,7 @@ a {
 .navbar__cart--icon {
   width: 2.5rem;
   position: relative;
-}
-.navbar__cart--icon::before {
-  position: absolute;
-  content: "1";
-  width: 2rem;
-  height: 2rem;
-  background: #00ab84;
-  top: 2rem;
-  left: 1rem;
+  cursor: pointer;
 }
 
 /* Modal cart */
