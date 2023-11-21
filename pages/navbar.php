@@ -5,7 +5,7 @@
       <a href="index.php">Home</a>
     </li>
     <li class="navbar__list--item">
-      <a href="index.php?quanly=shop">Shop</a>
+      <a href="index.php/pages/shop.php">Shop</a>
       <ul class="navbar__list--item-sub">
         <li class="navbar__item--sub"><a href="index.php?quanly=cactus">Cactus</a></li>
         <li class="navbar__item--sub"><a href="index.php?quanly=succulent">Succulent</a></li>

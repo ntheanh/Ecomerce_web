@@ -1,0 +1,35 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.4rem;
+  color: #00ab84;
+  text-align: center;
+  margin: 3rem 0;
+}
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+.admin_list {
+  background: #00ab84;
+  display: flex;
+  gap: 4rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.admin_list li {
+  list-style: none;
+}
+.admin_list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
