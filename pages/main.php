@@ -1,5 +1,36 @@
 <section class="main">
-  <div class="main_seedling">
+  <?php
+  include("./pages/menu.php");
+  ?>
+  <div class="cart__shop">
+    <?php
+    include("sidebar/sidebar.php");
+    ?>
+    <div class="cart__shop--main">
+      <?php
+      if (isset($_GET['quanly'])) {
+        $tam = $_GET['quanly'];
+      } else {
+        $tam = '';
+      }
+      if ($tam == 'cactus') {
+        include('main/cactus.php');
+      } elseif ($tam == 'succulent') {
+        include('main/succulent.php');
+      } elseif ($tam == 'indoorplants') {
+        include('main/indoor_plant.php');
+      } elseif ($tam == "bonsai") {
+        include("main/bonsai.php");
+      } else {
+        include("main/index.php");
+      }
+      ?>
+    </div>
+  </div>
+
+  <!-- main product  -->
+
+  <!-- <div class="main_seedling">
     <div class="main_service">
       <div class="wrap-img">
         <img class="sprout-img" src="icon/sprout.png" alt="sprout">
@@ -36,9 +67,11 @@
         <p>A line about the service you've mentioned above.</p>
       </div>
     </div>
-  </div>
+  </div> -->
+
   <!-- Product -->
-  <div class="product">
+
+  <!-- <div class="product">
     <div class="product-plants">
       <a href="">
         <img src="images/cactus.jpg" alt="" class="plants-img">
@@ -75,9 +108,11 @@
         <img src="icon/right-arrow.png" alt="">
       </div>
     </div>
-  </div>
+  </div> -->
+
   <!-- All Plants -->
-  <div class="product__all-plants">
+
+  <!-- <div class="product__all-plants">
     <div class="all__plants-header">
       <div class="all__plants-text">
         <h2>Featured Products</h2>
@@ -119,6 +154,23 @@
         <p class="plant-star">******</p>
         <p class="plant-price">$99.00</p>
       </div>
+      <div class="plants-card">
+        <a href="/">
+          <img src="images/Old-Lady-Cactus.jpg" alt="bonsai">
+        </a>
+        <a class="plant-tittle">Old Lady Cactus</a>
+        <p class="plant-star">******</p>
+        <p class="plant-price">$99.00</p>
+      </div>
+      <div class="plants-card">
+        <a href="/">
+          <img src="images/Old-Lady-Cactus.jpg" alt="bonsai">
+        </a>
+        <a class="plant-tittle">Old Lady Cactus</a>
+        <p class="plant-star">******</p>
+        <p class="plant-price">$99.00</p>
+      </div>
     </div>
-  </div>
+  </div> -->
+
 </section>

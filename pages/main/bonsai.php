@@ -1,3 +1,5 @@
+<p>bonsai</p>
+
 <div class="plants cart__shop-plants">
   <div class="plants-card">
     <a href="/">
@@ -71,6 +73,5 @@
     <p class="plant-star">******</p>
     <p class="plant-price">$99.00</p>
   </div>
-
 
 </div>

@@ -19,16 +19,6 @@
     include("pages/main.php");
     include("pages/footer.php");
 
-    if (isset($_GET['quanly'])) {
-      $tam = $_GET['quanly'];
-    } else {
-      $tam = '';
-    }
-    if ($tam == 'shop') {
-      header('Location:/shop.php');
-    } elseif ($tam == 'index') {
-      include('main/index.php');
-    }
     ?>
   </div>
   <script src="js/modalCart.js"></script>

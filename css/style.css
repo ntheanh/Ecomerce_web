@@ -236,6 +236,63 @@ span {
 }
 
 /* Main */
+.menu {
+  display: flex;
+  background: #00ab84;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.menu li a {
+  color: #fff;
+}
+.cart__shop {
+  display: flex;
+  padding: 4rem;
+}
+
+.cart__shop--sidebar {
+  width: 30%;
+  margin-left: 5rem;
+}
+
+.cart__shop--input input[type="text"] {
+  border: 1px solid #ccc;
+  border-right: none;
+  padding: 1.4rem;
+  border-radius: 1px;
+  font-size: 1.4rem;
+}
+.cart__shop--input input[type="text"]:focus {
+  outline: none;
+}
+.btn-input {
+  padding: 1rem 2rem;
+}
+.cart_title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 3rem 0;
+}
+.cart__shop--products {
+  display: flex;
+  gap: 20rem;
+}
+.cart__shop--title a {
+  margin-bottom: 2rem;
+  display: block;
+  font-size: 2rem;
+  color: #00ab84;
+}
+.cart__shop--quantity p {
+  margin-bottom: 2rem;
+}
+.cart__shop--main {
+  width: 70%;
+}
+.cart__shop-plants {
+  display: flex;
+  flex-wrap: nowrap;
+}
 .main_seedling {
   display: flex;
   justify-content: space-between;
@@ -334,14 +391,17 @@ span {
 .plants {
   margin-top: 4rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 5rem;
 }
 .plants-card {
   text-align: center;
 }
 .plants-card img {
-  width: 380px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   gap: 3rem;
 }
 .plants-card .plant-tittle {
