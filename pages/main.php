@@ -13,14 +13,12 @@
       } else {
         $tam = '';
       }
-      if ($tam == 'cactus') {
-        include('main/cactus.php');
-      } elseif ($tam == 'succulent') {
-        include('main/succulent.php');
-      } elseif ($tam == 'indoorplants') {
-        include('main/indoor_plant.php');
-      } elseif ($tam == "bonsai") {
-        include("main/bonsai.php");
+      if ($tam == 'category') {
+        include('main/category.php');
+      } elseif ($tam == 'aboutus') {
+        include('main/aboutus.php');
+      } elseif ($tam == "testimonial") {
+        include("main/testimonial.php");
       } else {
         include("main/index.php");
       }

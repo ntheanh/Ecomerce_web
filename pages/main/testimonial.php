@@ -1,4 +1,4 @@
-<p>bonsai</p>
+<p>testimonal</p>
 
 <div class="plants cart__shop-plants">
   <div class="plants-card">

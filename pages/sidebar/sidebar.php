@@ -6,10 +6,10 @@
   <h4 class="cart_title">Categories</h4>
   <div class="cart__shop--products">
     <div class="cart__shop--title">
-      <a href="index.php?quanly=cactus">Cactus</a>
-      <a href="index.php?quanly=succulent">Succulent</a>
-      <a href="index.php?quanly=indoorplants">Indoor Plants</a>
-      <a href="index.php?quanly=bonsai">Bonsai</a>
+      <a href="index.php?quanly=category&id=1">Cactus</a>
+      <a href="index.php?quanly=category&id=2">Succulent</a>
+      <a href="index.php?quanly=category&id=3">Indoor Plants</a>
+      <a href="index.php?quanly=category&id=4">Bonsai</a>
     </div>
     <div class="cart__shop--quantity">
       <p>4</p>
