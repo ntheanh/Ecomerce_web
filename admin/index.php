@@ -13,7 +13,7 @@
   <h1>Welcome to Admin</h1>
   <div class="wrapper">
     <?php
-    // include("modules/header.php");
+    include("config/config.php");
     include("modules/menu.php");
     include("modules/main.php");
     include("modules/footer.php");
