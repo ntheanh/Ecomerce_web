@@ -1,6 +1,7 @@
 <style>
   table {
     width: 50%;
+
   }
 
   input {
@@ -9,6 +10,22 @@
   }
 </style>
 <h2>Them danh muc san pham</h2>
+
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+  }
+</style>
+<h2>Them san pham</h2>
+
 <form action="modules/quanlydanhmucsp/xuly.php" method="POST">
   <table border="1">
     <tr>
