@@ -1,6 +1,16 @@
 <style>
   table {
     width: 50%;
+
+  }
+
+  input {
+    font-size: 2rem;
+    width: 100%;
+  }
+</style>
+<h2>Them danh muc san pham</h2>
+
     font-size: 2rem;
   }
 
