@@ -9,7 +9,6 @@ $query_list_danhmucsp = mysqli_query($mysqli, $sql_list_danhmucsp);
     <td>ID</td>
     <td>Ten danh muc</td>
     <td>Quan ly</td>
-    <td>So luong</td>
   </tr>
   <?php
   $i = 0;
@@ -26,9 +25,6 @@ $query_list_danhmucsp = mysqli_query($mysqli, $sql_list_danhmucsp);
       <td>
         <a href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc'] ?>">XOA</a> | <a
           href="?action=quanlydanhmucsanpham&query=update&iddanhmuc=<?php echo $row['id_danhmuc'] ?>">SUA</a>
-      </td>
-      <td>
-        <?php echo $row['thutu'] ?>
       </td>
     </tr>
     <?php
