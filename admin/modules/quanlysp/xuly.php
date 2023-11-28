@@ -23,6 +23,11 @@ if (isset($_POST['themsanpham'])) {
   header("Location:../../index.php?action=quanlysanpham&query=add");
 } else {
   $id = $_GET['idsanpham'];
+  $sql = "SELECT * FROM sanpham WHERE id_sanpham='$id' LIMIT 1";
+  $query = mysqli_query($mysqli, $sql);
+  while ($row = mysqli_fetch_array($query)) {
+    unlink('uploads/' . $row['hinhanh']);
+  }
   $sql_delete = "DELETE FROM sanpham WHERE id_sanpham='" . $id . "'";
   mysqli_query($mysqli, $sql_delete);
   header("Location:../../index.php?action=quanlysanpham&query=add");

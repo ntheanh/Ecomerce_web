@@ -10,6 +10,8 @@
   }
 </style>
 <h2>Them san pham</h2>
+<table border="1">
+  <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
 <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
   <table border="1">
     <tr>
@@ -52,5 +54,7 @@
     <tr>
       <td colspan="2"><input type="submit" name="themsanpham" value="Them san pham"></td>
     </tr>
+  </form>
+</table>
   </table>
 </form>
