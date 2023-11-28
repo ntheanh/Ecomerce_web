@@ -11,6 +11,7 @@
 <?php
 $sql_update_sp = "SELECT * FROM sanpham WHERE id_sanpham = '$_GET[idsanpham]' ";
 $query_update_sp = mysqli_query($mysqli, $sql_update_sp);
+
 ?>
 
 <h2>Update san pham</h2>
@@ -19,6 +20,17 @@ $query_update_sp = mysqli_query($mysqli, $sql_update_sp);
   while ($line = mysqli_fetch_array($query_update_sp)) {
     ?>
     <form action="modules/quanlysp/xuly.php?idsanpham=<?php echo $_GET['idsanpham'] ?>" method="POST">
+
+// echo $query_update_danhmuc;
+?>
+
+<h2>Update san pham</h2>
+<form action="modules/quanlysp/xuly.php?idsanpham=<?php echo $_GET['idsanpham'] ?>" method="POST">
+  <table border="1">
+    <?php
+    while ($line = mysqli_fetch_array($query_update_sp)) {
+      ?>
+
       <tr>
         <td>Ten san pham</td>
         <td><input type="text" name="tensanpham" value="<?php echo $line['ten_sp'] ?>"></td>
@@ -41,11 +53,19 @@ $query_update_sp = mysqli_query($mysqli, $sql_update_sp);
       </tr>
       <tr>
         <td>Tom tat</td>
+
         <td><textarea rows="10" name="tomtat" style="resize: none"><?php $line['tomtat'] ?></textarea></td>
       </tr>
       <tr>
         <td>Noi dung</td>
         <td><textarea rows="10" name="noidung" style="resize: none"><?php $line['noidung'] ?></textarea></td>
+
+        <td><textarea rows="10" name="tomtat" style="resize:none" value="<?php echo $line['tomtat'] ?>"></textarea></td>
+      </tr>
+      <tr>
+        <td>Noi dung</td>
+        <td><textarea rows="10" name="noidung" style="resize:none" value="<?php echo $line['noidung'] ?>"></textarea></td>
+
       </tr>
       <tr>
         <td>Tinh trang</td>
@@ -59,8 +79,16 @@ $query_update_sp = mysqli_query($mysqli, $sql_update_sp);
       <tr>
         <td colspan="2"><input type="submit" name="suasanpham" value="Update san pham"></td>
       </tr>
+
     </form>
     <?php
   }
   ?>
 </table>
+
+      <?php
+    }
+    ?>
+  </table>
+</form>
+

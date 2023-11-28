@@ -12,6 +12,8 @@
 <h2>Them san pham</h2>
 <table border="1">
   <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
+<form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
+  <table border="1">
     <tr>
       <td>Ten san pham</td>
       <td><input type="text" name="tensanpham" placeholder="Nhap ten"></td>
@@ -54,3 +56,5 @@
     </tr>
   </form>
 </table>
+  </table>
+</form>
