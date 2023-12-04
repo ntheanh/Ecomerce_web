@@ -1,5 +1,9 @@
 <?php
+
 $sql_list_sp = "SELECT * FROM sanpham, danhmuc WHERE sanpham.id_danhmuc = danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
+
+$sql_list_sp = "SELECT * FROM sanpham ORDER BY id_sanpham DESC";
+
 $query_list_sp = mysqli_query($mysqli, $sql_list_sp);
 ?>
 
@@ -11,7 +15,10 @@ $query_list_sp = mysqli_query($mysqli, $sql_list_sp);
     <td>Hinh anh</td>
     <td>Gia</td>
     <td>So luong</td>
+
     <td>Danh muc</td>
+
+
     <td>Tom tat</td>
     <td>Noi dung</td>
     <td>Tinh trang</td>
@@ -39,9 +46,11 @@ $query_list_sp = mysqli_query($mysqli, $sql_list_sp);
         <?php echo $row['soluong'] ?>
       </td>
       <td>
+
         <?php echo $row['tendanhmuc'] ?>
       </td>
       <td>
+
         <?php echo $row['tomtat'] ?>
       </td>
       <td>

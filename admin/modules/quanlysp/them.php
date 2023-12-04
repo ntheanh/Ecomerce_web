@@ -12,6 +12,10 @@
 <h2>Them san pham</h2>
 <table border="1">
   <form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
+
+<form action="modules/quanlysp/xuly.php" method="POST" enctype="multipart/form-data">
+  <table border="1">
+
     <tr>
       <td>Ten san pham</td>
       <td><input type="text" name="tensanpham" placeholder="Nhap ten"></td>
@@ -41,6 +45,7 @@
       <td><textarea rows="10" name="noidung" style="resize:none"></textarea></td>
     </tr>
     <tr>
+
       <td>Danh muc san pham</td>
       <td>
         <select name="danhmuc">
@@ -59,6 +64,7 @@
       </td>
     </tr>
     <tr>
+
       <td>Tinh trang</td>
       <td>
         <select name="tinhtrang">
@@ -71,4 +77,10 @@
       <td colspan="2"><input type="submit" name="themsanpham" value="Them san pham"></td>
     </tr>
   </form>
+
 </table>
+
+</table>
+  </table>
+</form>
+
