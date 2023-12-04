@@ -24,7 +24,6 @@
     include("modules/quanlydanhmucsp/lietke.php");
   } elseif ($tam == "quanlydanhmucsanpham" && $query == "sua") {
     include("modules/quanlydanhmucsp/sua.php");
-
   } else {
     include("dashboard.php");
   }

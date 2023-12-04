@@ -13,7 +13,6 @@ $query_lietke_danhmucsp = mysqli_query($mysqli, $sql_lietke_danhmucsp);
     <td>ID</td>
     <td>Ten danh muc</td>
     <td>Quan ly</td>
-    <td>So luong</td>
   </tr>
   <?php
   $i = 0;
